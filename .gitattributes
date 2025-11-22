@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# binaries
+*.png -text
+*.jpg -text
+*.pdf -text
+
+# if you have Windows batch files:
+*.bat text eol=crlf

@@ -1,0 +1,14 @@
+CHANGES DONE
+1.removed restaurant field from user model as it was creating reverse relationship issue
+2.modified UserCreateSerializer 
+3.added owner field in restaurant model to link it with user model for easier fetching and authenticating
+4. added this line (return Restaurant.objects.filter(owner=user)) in restaurant viewset to get only thier restaurant details 
+for admin user.(but still needs to be fixed)
+5.modified menu models to add fields like is_vegan,is_vegeterian,currency,category
+6.also changed view api of menu app to create the menu from json now instead of manually creating each item 
+
+
+
+# pending(what to do next)
+1.make image field for inserting menu as pdf
+
